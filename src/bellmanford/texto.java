@@ -34,7 +34,7 @@ public class texto {
                 int j = 0;
                 String linea = bfRead;
                 String [] campos = linea.split(" ");
-                while(j<campos.length)
+                while(j<campos.length)  // se ingresan los datos a la lita que enteros que luego se añadra al arraylist
                 {
 //                  System.out.println(campos[j]);
                     list.add(Integer.valueOf(campos[j]));
@@ -44,7 +44,7 @@ public class texto {
                 cont++;
             } 
         }
-        // esta aprte se activa si es que se encuentra algun error en el archivo de texto
+        // esta parte se activa si es que se encuentra algun error en el archivo de texto
         catch(Exception e)
         {
             System.out.println("no se encontro archivo");
