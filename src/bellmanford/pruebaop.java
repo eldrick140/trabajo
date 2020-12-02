@@ -27,6 +27,9 @@ public class pruebaop {
         {
             for(int j=0;j<aristas;j++)
             {
+                //para cada arista o dato que esta en la lista de datos, se van dando los valores y ingresandolos al if, para 
+                //ver si la comparacion entre estos con los que ya entan en la lista de distancia son menores
+                // y de ser asi, de cambiara la data que hay en la lista de distancias 
                 int inicio = listaop.get(j).get(0);
                 int destino = listaop.get(j).get(1);
                 int peso = listaop.get(j).get(2);
@@ -36,7 +39,7 @@ public class pruebaop {
                 }
             }
         }
-        // un for para ver si  se tienen ciclos negativos 
+        // un for que realiza nuevamente el recorrido de la data para ver si  se tienen ciclos negativos  y de ser asi imprimir un aviso
         for(int i=0;i<aristas;i++)
         {
             int inicio = listaop.get(i).get(0);
